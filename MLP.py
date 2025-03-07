@@ -65,7 +65,7 @@ class MLP:
     
     # I assume that the input data fits into memory so no batch size
     def train(self, x, epochs = None, loss_function = None, lr = 0.001):
-        if (loss_function == None or not isinstance(loss_function, callable)):
+        if (loss_function == None):
             def loss(y_pred, y_true):
                 inner = [(y1 - y2) ** 2 for y1, y2 in zip(y_pred, y_true)]
                 return sum(inner) / len(x)            
