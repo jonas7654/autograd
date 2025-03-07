@@ -1,3 +1,4 @@
-# autograd
+This is not a robust and complete implementation. I wrote this repository for my own educational purposes only.
 
-<img src="./mlp_graph.svg">
+# Example
+$$f(a,b,c) = \sigma(a*c +b)$$
