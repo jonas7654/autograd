@@ -88,9 +88,8 @@ class MLP:
            self.update(lr)
            self.zero_grad()
            
-           if epoch % 5 == 0:
-               print(f"Epoch: {epoch} \n Loss: {loss}")
-           
+           if epoch % 5 == 0:               
+               print(f"Epoch: {epoch} \n Loss: {loss}")           
            
     
     def __repr__(self):
